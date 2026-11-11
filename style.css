@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.heading {
+    gap: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#resize-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#resize-btn:hover {
+    background-color: #1d4ed8;
+}
+
+#container {
+    display: flex;
+    box-sizing: content-box; /*  Keeps the full 560x560px inside clear for squares. */
+    gap: 0px;
+    width: 560px;
+    height: 560px;
+    flex-wrap: wrap;
+    border: 3px solid #334155;
+    border-color: #ffffff;
+}
+
+.grid-square {
+    border: 1px solid #f1f5f9;
+    margin: 0px;
+}
